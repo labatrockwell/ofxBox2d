@@ -362,7 +362,7 @@
 #include <string.h>
 #include <math.h>
 #ifndef NO_TIMER
-#include <sys/time.h>
+#include <time.h>
 #endif /* not NO_TIMER */
 #ifdef CPU86
 #include <float.h>
@@ -15776,6 +15776,7 @@ char **argv;
 #ifndef TRILIBRARY
   FILE *polyfile;
 #endif /* not TRILIBRARY */
+#define NO_TIMER
 #ifndef NO_TIMER
   /* Variables for timing the performance of Triangle.  The types are */
   /*   defined in sys/time.h.                                         */
